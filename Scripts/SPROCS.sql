@@ -311,4 +311,85 @@ begin
 	values (@BlogID,@CategoryID)
 end
 go
----TODO:  Comment, CRUD BlogCategory
+
+if exists(
+select *
+from INFORMATION_SCHEMA.ROUTINES
+where ROUTINE_NAME = 'ReadAllBlogsCategories'
+)
+begin
+	drop procedure ReadAllBlogsCategories
+	end
+	go
+create procedure ReadAllBlogsCategories(
+@BlogID int
+)
+as
+select b.BlogID, b.CategoryID, c.CategoryName
+from BlogCategory b
+inner join Category c
+on b.CategoryID = c.CategoryID
+where b.BlogID = @BlogID
+go
+
+--You might configure this later to bring in Blog Descriptions and more info to display on a list of blogs
+if exists(
+select *
+from INFORMATION_SCHEMA.ROUTINES
+where ROUTINE_NAME = 'ReadAllCategoriesBlogs'
+)
+begin
+	drop procedure ReadAllCategoriesBlogs
+	end
+	go
+create procedure ReadAllCategoriesBlogs(
+@CategoryID int
+)
+as
+select bc.CategoryID, c.CategoryName, bc.BlogID, b.Title
+from BlogCategory bc
+inner join Category c
+on bc.CategoryID = c.CategoryID
+inner join Blog b
+on b.BlogID = bc.BlogID
+where bc.CategoryID = @CategoryID
+go
+
+if exists(
+select *
+from INFORMATION_SCHEMA.ROUTINES
+where ROUTINE_NAME = 'UpdatedBlogCategory'
+)
+begin
+	drop procedure UpdatedBlogCategory
+	end
+	go
+create procedure UpdatedBlogCategory(
+@BlogID int,
+@CategoryID int
+)
+as
+begin
+	update BlogCategory
+	set CategoryID = @CategoryID
+	where BlogCategory.BlogID = @BlogID
+end
+go
+
+if exists(
+select *
+from INFORMATION_SCHEMA.ROUTINES
+where ROUTINE_NAME = 'DeleteBlogCategory'
+)
+begin
+	drop procedure DeleteBlogCategory
+	end
+	go
+create procedure DeleteBlogCategory(
+@BlogID int,
+@CategoryID int
+)
+as
+delete from BlogCategory 
+where BlogCategory.BlogID = @BlogID and BlogCategory.CategoryID = @CategoryID
+go
