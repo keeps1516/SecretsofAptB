@@ -5028,6 +5028,16 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "SecretsofAptB.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/SecretsofAptB.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SecretsofAptB.Models.dll": {}
+        }
       }
     }
   },
@@ -13112,6 +13122,11 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "SecretsofAptB.Models/1.0.0": {
+      "type": "project",
+      "path": "../SecretsofAptB.Models/SecretsofAptB.Models.csproj",
+      "msbuildProject": "../SecretsofAptB.Models/SecretsofAptB.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13119,7 +13134,8 @@
       "Microsoft.AspNetCore.All >= 2.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.1",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.1"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.1",
+      "SecretsofAptB.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13154,7 +13170,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "Y:\\Repository\\SecretsofAptB\\SecretsofAptB.UI\\SecretsofAptB.Models\\SecretsofAptB.Models.csproj": {
+              "projectPath": "Y:\\Repository\\SecretsofAptB\\SecretsofAptB.UI\\SecretsofAptB.Models\\SecretsofAptB.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
