@@ -16,6 +16,42 @@
           "lib/netstandard2.0/Dapper.dll": {}
         }
       },
+      "Microsoft.Extensions.Configuration/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -389,6 +425,15 @@
           "ref/netstandard1.5/System.Runtime.dll": {}
         }
       },
+      "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
       "System.Security.AccessControl/4.4.0": {
         "type": "package",
         "dependencies": {
@@ -500,6 +545,39 @@
         "lib/netstandard1.3/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
         "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
+    "Microsoft.Extensions.Configuration/2.0.0": {
+      "sha512": "SsI4RqI8EH00+cYO96tbftlh87sNUv1eeyuBU1XZdQkG0RrHAOjWgl7P0FoLeTSMXJpOnfweeOWj2d1/5H3FxA==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/2.0.0",
+      "files": [
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.2.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/2.0.0": {
+      "sha512": "rHFrXqMIvQNq51H8RYTO4IWmDOYh8NUzyqGlh0xHWTP6XYnKk7Ryinys2uDs+Vu88b3AMlM3gBBSs78m6OQpYQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/2.0.0",
+      "files": [
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/2.0.0": {
+      "sha512": "ukg53qNlqTrK38WA30b5qhw0GD7y3jdI9PHHASjdKyTcBHTevFM2o23tyk3pWCgAV27Bbkm+CPQ2zUe1ZOuYSA==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/2.0.0",
+      "files": [
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.2.0.0.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec"
       ]
     },
     "Microsoft.NETCore.App/2.0.0": {
@@ -1582,6 +1660,27 @@
         "system.runtime.nuspec"
       ]
     },
+    "System.Runtime.CompilerServices.Unsafe/4.4.0": {
+      "sha512": "9dLLuBxr5GNmOfl2jSMcsHuteEg32BEfUotmmUkmZjpR3RpVHE8YQwt0ow3p6prwA1ME8WqDVZqrr8z6H8G+Kw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.4.0",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Security.AccessControl/4.4.0": {
       "sha512": "2NRFPX/V81ucKQmqNgGBZrKGH/5ejsvivSGMRum0SMgPnJxwhuNkzVS1+7gC3R2X0f57CtwrPrXPPSe6nOp82g==",
       "type": "package",
@@ -1845,45 +1944,41 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Dapper >= 1.50.4",
+      "Microsoft.Extensions.Configuration >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "SecretsofAptB.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kriskeepers\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/kriskeepers/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "Y:\\Repository\\SecretsofAptB\\SecretsofAptB.UI\\SecretsofAPtB.Data\\SecretsofAPtB.Data.csproj",
+      "projectUniqueName": "/Users/kriskeepers/Repository/SecretsofAptB/SecretsofAptB.UI/SecretsofAPtB.Data/SecretsofAPtB.Data.csproj",
       "projectName": "SecretsofAPtB.Data",
-      "projectPath": "Y:\\Repository\\SecretsofAptB\\SecretsofAptB.UI\\SecretsofAPtB.Data\\SecretsofAPtB.Data.csproj",
-      "packagesPath": "C:\\Users\\kriskeepers\\.nuget\\packages\\",
-      "outputPath": "Y:\\Repository\\SecretsofAptB\\SecretsofAptB.UI\\SecretsofAPtB.Data\\obj\\",
+      "projectPath": "/Users/kriskeepers/Repository/SecretsofAptB/SecretsofAptB.UI/SecretsofAPtB.Data/SecretsofAPtB.Data.csproj",
+      "packagesPath": "/Users/kriskeepers/.nuget/packages/",
+      "outputPath": "/Users/kriskeepers/Repository/SecretsofAptB/SecretsofAptB.UI/SecretsofAPtB.Data/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\kriskeepers\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/kriskeepers/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "Y:\\Repository\\SecretsofAptB\\SecretsofAptB.UI\\SecretsofAptB.Models\\SecretsofAptB.Models.csproj": {
-              "projectPath": "Y:\\Repository\\SecretsofAptB\\SecretsofAptB.UI\\SecretsofAptB.Models\\SecretsofAptB.Models.csproj"
+            "/Users/kriskeepers/Repository/SecretsofAptB/SecretsofAptB.UI/SecretsofAptB.Models/SecretsofAptB.Models.csproj": {
+              "projectPath": "/Users/kriskeepers/Repository/SecretsofAptB/SecretsofAptB.UI/SecretsofAptB.Models/SecretsofAptB.Models.csproj"
             }
           }
         }
@@ -1897,15 +1992,19 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Dapper": {
-            "target": "Package",
-            "version": "1.50.4"
-          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
             "version": "2.0",
             "autoReferenced": true
+          },
+          "Dapper": {
+            "target": "Package",
+            "version": "1.50.4"
+          },
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "2.0.0"
           }
         },
         "imports": [

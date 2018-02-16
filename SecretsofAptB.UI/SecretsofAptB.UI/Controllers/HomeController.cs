@@ -4,14 +4,25 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using SecretsofAptB.UI.Models;
+using SecretsofAPtB.Data;
 
 namespace SecretsofAptB.UI.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly IBlogRepository _blog;
+
+        public HomeController(IConfiguration nes)
         {
+            _blog = new BlogRepository(nes);
+        }
+
+        public IActionResult Index( )
+        {
+            _blog.CreateCategory("stuffness");
+
             return View();
         }
 

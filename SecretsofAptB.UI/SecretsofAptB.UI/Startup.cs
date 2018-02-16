@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using SecretsofAptB.UI.Data;
 using SecretsofAptB.UI.Models;
 using SecretsofAptB.UI.Services;
+using SecretsofAPtB.Data;
 
 namespace SecretsofAptB.UI
 {
@@ -29,6 +30,8 @@ namespace SecretsofAptB.UI
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("Connection")));
 
+            services.AddSingleton<IBlogRepository, BlogRepository>();
+            
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();

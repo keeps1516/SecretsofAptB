@@ -664,33 +664,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kriskeepers\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/kriskeepers/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "Y:\\Repository\\SecretsofAptB\\SecretsofAptB.UI\\SecretsofAptB.Models\\SecretsofAptB.Models.csproj",
+      "projectUniqueName": "/Users/kriskeepers/Repository/SecretsofAptB/SecretsofAptB.UI/SecretsofAptB.Models/SecretsofAptB.Models.csproj",
       "projectName": "SecretsofAptB.Models",
-      "projectPath": "Y:\\Repository\\SecretsofAptB\\SecretsofAptB.UI\\SecretsofAptB.Models\\SecretsofAptB.Models.csproj",
-      "packagesPath": "C:\\Users\\kriskeepers\\.nuget\\packages\\",
-      "outputPath": "Y:\\Repository\\SecretsofAptB\\SecretsofAptB.UI\\SecretsofAptB.Models\\obj\\",
+      "projectPath": "/Users/kriskeepers/Repository/SecretsofAptB/SecretsofAptB.UI/SecretsofAptB.Models/SecretsofAptB.Models.csproj",
+      "packagesPath": "/Users/kriskeepers/.nuget/packages/",
+      "outputPath": "/Users/kriskeepers/Repository/SecretsofAptB/SecretsofAptB.UI/SecretsofAptB.Models/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\kriskeepers\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/kriskeepers/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
